@@ -7,7 +7,7 @@ namespace ConsoleTutorialWithBeqa
     {
         static void Main(string[] args)
         {
-            HomeWork.Datavaleba1.Print();
+            SQL.SQLWorkflow.Run();
 
             Console.ReadKey();
         }
