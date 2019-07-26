@@ -6,9 +6,9 @@ using System.Data.SqlClient;
 
 namespace ConsoleTutorialWithBeqa.SQL
 {
-    public static class SQLWorkflow
+    public class SQLWorkflow : IRun
     {
-        public static void Run()
+        public void Run()
         {
             List<Ship> ships = GetShips();
 
@@ -18,7 +18,7 @@ namespace ConsoleTutorialWithBeqa.SQL
             }
         }
 
-        public static List<Ship> GetShips()
+        public List<Ship> GetShips()
         {
             string connectionString = @"Data Source=DESKTOP-LUKA;Initial Catalog=FerryDb2; Integrated Security=true";
 

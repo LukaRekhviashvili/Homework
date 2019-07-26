@@ -7,7 +7,17 @@ namespace ConsoleTutorialWithBeqa
     {
         static void Main(string[] args)
         {
-            SQL.SQLWorkflow.Run();
+            //IRun runner = new Interfaces.InterfacesWorkflow();
+            IRun runner = new SQL.SQLWorkflow();
+
+            runner.Run();
+
+            runner.Run();
+
+            for (int i = 0; i < 5; i++)
+            {
+                runner.Run();
+            }
 
             Console.ReadKey();
         }
