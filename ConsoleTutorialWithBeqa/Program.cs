@@ -8,16 +8,10 @@ namespace ConsoleTutorialWithBeqa
         static void Main(string[] args)
         {
             //IRun runner = new Interfaces.InterfacesWorkflow();
-            IRun runner = new SQL.SQLWorkflow();
+            //IRun runner = new SQL.SQLWorkflow();
+            IRun runner = new Dapper.DapperWorkflow();
 
             runner.Run();
-
-            runner.Run();
-
-            for (int i = 0; i < 5; i++)
-            {
-                runner.Run();
-            }
 
             Console.ReadKey();
         }
